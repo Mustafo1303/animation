@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cube{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    
+}
+.kvadrat{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    animation-name: kvadrat;
+    animation-duration: 5s;
+    animation-timing-function: linea;
+    animation-iteration-count: infinite;
+    animation-direction: revers;
+}
+.kvadrat:hover{
+    animation-play-state: paused;
+}
+@keyframes kvadrat {
+    0%{
+    left: 0;
+    top: 0;
+        
+    }
+    25%{
+       background-color: aqua;
+       left: 1400px;
+       top: 0px;
+      
+    }
+    50%{
+        background-color: red;
+       
+        left: 1400px;
+        
+
+    }
+    75%{
+      background-color: red;
+        top: 500px;
+        left: 1400px;
+    }
+    99%{
+        left: 1px;
+        top: 500px;
+    }
+    100%{
+        left: 1px;
+        top: -500px;
+    }
+
+}
